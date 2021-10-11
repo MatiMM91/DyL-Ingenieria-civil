@@ -1,13 +1,11 @@
 import { 
-    makeStyles, 
-    Typography,
-}                       from '@material-ui/core';
-import { 
     Grid, 
     Card, 
     CardContent, 
-    CardMedia, 
-}                       from '@material-ui/core';
+    CardMedia,
+    makeStyles, 
+    Typography,
+}                       from '@material-ui/core'
 import React            from 'react'
 import mockData         from '../mockData'
 
@@ -90,17 +88,16 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: "50px",
         borderRadius: "18px",
         overflow: "hidden",
-        height: "450px",
     },
     media: {
-        height: "200px",
+        paddin: 0,
     },
     cardtitle: {
         fontWeight: "bold",
         fontSize: "0.8rem",
     },
     description: {
-        fontSize: "0.9rem",
+        fontSize: "0.8rem",
         marginTop: "10px",
     }
 }));

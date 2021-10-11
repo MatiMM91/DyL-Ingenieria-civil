@@ -1,8 +1,10 @@
 import React           from 'react'
-import { makeStyles,
-    Typography, }      from '@material-ui/core';
-import { Paper }       from '@material-ui/core'
-import Form            from './Form';
+import { 
+    makeStyles,
+    Typography,
+    Paper, 
+}                      from '@material-ui/core'
+import Form            from './Form'
 
 const Contact = ({title,dark,id}) => {
     const classes = useStyles();
