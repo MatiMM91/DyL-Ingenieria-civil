@@ -34,14 +34,15 @@ const useStyles = makeStyles((theme) => ({
         margin: "0 auto",
         marginBottom: "50px",
         overflow: "hidden",
+        boxShadow: "0 0 15px -5px #ffcc00",
+        border: "2px solid #ffcc00",
         transition: "0.3s",
         animation: "ease-in-out",
         "&:hover": {
             transform: "scale(1.1)",
-            boxShadow: "0 0 5px 0px",
+            boxShadow: "0 0 15px 0px #ffcc00",
         },
         "& p": {
-            paddingTop: "5px",
             fontSize: "1.1rem",
         },
     },

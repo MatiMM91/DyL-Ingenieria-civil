@@ -28,21 +28,19 @@ const VisionModal = () => {
 
 const useStyles = makeStyles((theme) => ({
     card: {
-        maxWidth: 350,
+        maxWidth: 340,
         padding: theme.spacing(2),
         margin: "0 auto",
         marginBottom: "50px",
         overflow: "hidden",
-        borderRadius: "10px",
-        boxShadow: "6px 6px 1px 1px rgba(0,0,0, 0.2)",
+        boxShadow: "0 0 10px -5px #ffcc00 ",
         transition: "0.3s",
         animation: "ease-in-out",
         "&:hover": {
             transform: "scale(1.1)",
-            boxShadow: "0 0 15px 0px",
+            boxShadow: "0 0 10px 0px #ffcc00",
         },
         "& p": {
-            paddingTop: "5px",
             fontSize: "1.1rem",
         },
     },

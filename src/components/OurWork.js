@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     card: {
-        margin: theme.spacing(3),
+        margin: theme.spacing(1),
         marginBottom: "50px",
         borderRadius: "18px",
         overflow: "hidden",
