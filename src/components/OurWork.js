@@ -20,14 +20,15 @@ const OurWork = ({title,dark,id}) => {
                 </Typography>
                 <Grid container className={classes.grid}>
                     {
-                        mockData.map(({title, image, description},index)=>(
-                            <Grid key={index} xs={12} sm={12} md={12} lg={4} item>
+                        mockData.map(({title, alt, image, description},index)=>(
+                            <Grid key={index} xs={12} sm={6} md={6} lg={4} item>
                                 <Card className={classes.card}>
-                                    <CardContent>
+                                    <CardContent className={classes.cardContent}>
                                         <CardContent className={classes.media}>
                                             <CardMedia
                                                 component="img"
-                                                image={image}    
+                                                image={image}
+                                                alt={alt}
                                             />
                                         </CardContent>
                                         <CardContent>
@@ -56,8 +57,8 @@ const useStyles = makeStyles((theme) => ({
         minHeight: "93vh",
     },
     sectiondark: {
-        background: "linear-gradient(-150deg,#2C2C2C 20%, #36506a 82%, #2C2C2C 88%)",
-        color: "#fff",
+        background: "#fff",
+        color: "#000",
     },
     sectioncontent: {
         maxWidth: "80vw",
@@ -87,6 +88,7 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(1),
         marginBottom: "50px",
         borderRadius: "18px",
+        boxShadow: "0 0 10px -5px",
         overflow: "hidden",
     },
     media: {

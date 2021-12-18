@@ -1,70 +1,66 @@
-import React, {useState}  from 'react'
-import { makeStyles, Typography }     from '@material-ui/core';
-// import Carousel           from 'react-material-ui-carousel'
-import {images}           from '../helpers/CarouselData'
+import React 		from "react";
+import { 
+	CardMedia,
+	makeStyles, 
+	Typography } 	from "@material-ui/core";
+import topimage 	from "../images/topimage.png";
 
 const Slider = () => {
   var classes = useStyles();
-  const [currImg] = useState(0)
 
-  return (
-    <div className={classes.section}>
-      <div 
-        className={classes.sectioncontent}
-        style={{ backgroundImage: `url(${images[currImg].img})` }} 
-      >
-        <div 
-          style={{ 
-            background: "rgba(0,0,0,0.2)",
-            width: "100%",
-          }}
-        >
-          <div className={classes.carouselText}>
-            <Typography 
-              variant="h3" 
-              component="h3"
-            >
-              DyL Ingeniería
-            </Typography>
-            <Typography 
-              variant="h4" 
-              component="h4"
-            >
-              Servicios de Ingeniería Industrial y Obras Civiles
-            </Typography>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+	return (
+		<div className={classes.section}>
+			<div className={classes.sectioncontent}>
+				<CardMedia
+					image 		= {topimage}
+					component 	= 'img'
+					style		= {{height: '100%'}}
+					alt 		= {topimage}
+				/>
+				<div className={classes.topText}>
+					<Typography variant="h3" component="h3">
+						DyL Ingeniería
+					</Typography>
+					<Typography variant="h4" component="h4">
+						Servicios de Ingeniería Industrial y Obras Civiles
+					</Typography>
+				</div>
+			</div>
+		</div>
+	);
+};
 
 const useStyles = makeStyles((theme) => ({
-    section: {
-      minHeight: "50vh",
-    },
-    sectiondark: {
-      background: "#fff",
-    },
-    sectioncontent: {
-      height: "50vh",
-      background: "#000",
-      backgroundPosition: 'center',
-      backgroundRepeat: "no-repeat",
-      backgroundSize: 'cover',
-      display: 'flex',
-      alignItems: 'center',
-    },
-    carouselText: {
-      margin: '0 auto',
-      marginLeft: '5%',
-      fontWeight:"bold",
-      "& h4": {
-        marginTop: "10px",
-        fontSize:"2.0rem",
-        fontWeight:"bold",
-      },
-    },
+	section: {
+		minHeight: "50vh",
+	},
+	sectiondark: {
+		background: "#fff",
+	},
+	sectioncontent: {
+		height: "50vh",
+		backgroundPosition: "center",
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "cover",
+		display: "flex",
+		alignItems: "center",
+		position: "relative",
+	},
+	topText: {
+		background: "rgba(0,0,0,0.2)",
+		fontWeight: "bold",
+		width: "100%",
+		position: "absolute",
+		"& h3": {
+			paddingLeft: "30px",
+		},
+		"& h4": {
+			paddingLeft: "30px",
+			marginTop: "10px",
+			fontSize: "2.0rem",
+			fontWeight: "bold",
+		},
+	},
 }));
 
-export default Slider
+export default Slider;

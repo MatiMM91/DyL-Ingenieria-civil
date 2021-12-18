@@ -14,17 +14,17 @@ const ActivityAreas = ({title,dark,id}) => {
     return (
         <div className={`${classes.section} ${dark && classes.sectiondark}`}>
             <div className={classes.sectioncontent} id={id}>
-                <Typography className={classes.title} variant="h3">
+                <Typography className={classes.title} variant="h3" component="h3">
                     {title}
                 </Typography>
                     <List className={classes.list}>
                         <ListItem>
                             <ListItemIcon>
-                                <DoubleArrowIcon/>
+                                <DoubleArrowIcon className={classes.icon}/>
                             </ListItemIcon>
                             <ListItemText
                                 primary={
-                                    <Typography variant="h5">
+                                    <Typography style={{fontSize:'1.2rem',}}>
                                         "Proyectos de Ingeniería en Obras Civiles e Industriales"
                                     </Typography>
                                 }
@@ -32,11 +32,11 @@ const ActivityAreas = ({title,dark,id}) => {
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
-                                <DoubleArrowIcon/>
+                                <DoubleArrowIcon className={classes.icon}/>
                             </ListItemIcon>
                             <ListItemText
                                 primary={
-                                    <Typography variant="h5">
+                                    <Typography style={{fontSize:'1.2rem',}}>
                                         "Construcción"
                                     </Typography>
                                 }
@@ -44,11 +44,11 @@ const ActivityAreas = ({title,dark,id}) => {
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
-                                <DoubleArrowIcon/>
+                                <DoubleArrowIcon className={classes.icon}/>
                             </ListItemIcon>
                             <ListItemText
                                 primary={
-                                    <Typography variant="h5">
+                                    <Typography style={{fontSize:'1.2rem',}}>
                                         "Soluciones Tecnologías"
                                     </Typography>
                                 }
@@ -56,11 +56,11 @@ const ActivityAreas = ({title,dark,id}) => {
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
-                                <DoubleArrowIcon/>
+                                <DoubleArrowIcon className={classes.icon}/>
                             </ListItemIcon>
                             <ListItemText
                                 primary={
-                                    <Typography variant="h5">
+                                    <Typography style={{fontSize:'1.2rem',}}>
                                         "Normalizaciones de Especialidades"
                                     </Typography>
                                 }
@@ -68,11 +68,11 @@ const ActivityAreas = ({title,dark,id}) => {
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
-                                <DoubleArrowIcon/>
+                                <DoubleArrowIcon className={classes.icon}/>
                             </ListItemIcon>
                             <ListItemText
                                 primary={
-                                    <Typography variant="h5">
+                                    <Typography style={{fontSize:'1.2rem',}}>
                                         "Consultorías"
                                     </Typography>
                                 }
@@ -80,11 +80,11 @@ const ActivityAreas = ({title,dark,id}) => {
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
-                                <DoubleArrowIcon/>
+                                <DoubleArrowIcon className={classes.icon}/>
                             </ListItemIcon>
                             <ListItemText
                                 primary={
-                                    <Typography variant="h5">
+                                    <Typography style={{fontSize:'1.2rem',}}>
                                         "Instalaciones"
                                     </Typography>
                                 }
@@ -92,11 +92,11 @@ const ActivityAreas = ({title,dark,id}) => {
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
-                                <DoubleArrowIcon/>
+                                <DoubleArrowIcon className={classes.icon}/>
                             </ListItemIcon>
                             <ListItemText
                                 primary={
-                                    <Typography variant="h5">
+                                    <Typography style={{fontSize:'1.2rem',}}>
                                         "Remodelaciones"
                                     </Typography>
                                 }
@@ -104,11 +104,11 @@ const ActivityAreas = ({title,dark,id}) => {
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
-                                <DoubleArrowIcon/>     
+                                <DoubleArrowIcon className={classes.icon}/>     
                             </ListItemIcon>
                             <ListItemText
                                 primary={
-                                    <Typography variant="h5">
+                                    <Typography style={{fontSize:'1.2rem',}}>
                                         "Mantenimiento"
                                     </Typography>
                                 }
@@ -125,21 +125,22 @@ const useStyles = makeStyles((theme) => ({
         minHeight: "68vh",
     },
     sectiondark: {
-        color: "#fff",
     },
     sectioncontent: {
         maxWidth: "80vw",
+        backgroundColor:"#A3A9C6 ",
+        borderTopRightRadius: "55px",
+        borderBottomRightRadius: "55px",
+        boxShadow: "4px 4px rgba(100,100,100, 0.2)",
         [theme.breakpoints.down("xs")]: {
             maxWidth: "90vw",
         },
-        margin: "0 auto",
     },
     title: {
         paddingTop: "40px",
-        marginBottom: "30px",
+        marginBottom: "15px",
         display: "flex",
         justifyContent: "center",
-        borderBottom: "4px solid #ffcc00",
         [theme.breakpoints.down("xs")]: {
             fontSize:"2.0rem",
             marginBottom: "20px",

@@ -61,7 +61,7 @@ const Navbar = () => {
                         className={classes.media}
                         alt={dyl}
                         onClick={scrollToTop}    
-                        />
+                    />
                     <h2 onClick={scrollToTop}>Ingeniería</h2>
                 </List>
                 <List className={classes.menu}>
@@ -79,9 +79,13 @@ const Navbar = () => {
                         ))
                     }
                 </List>
-                <IconButton className={classes.menuButton} 
-                        edges="end"
-                        onClick={()=>setOpen(!open)}>
+                <IconButton 
+                    className={classes.menuButton} 
+                    edges       = "end"
+                    onClick     = {()=>setOpen(!open)}
+                    name        = 'menubutton'
+                    aria-label  = 'menubutton'
+                >
                     <MenuIcon fontSize="large"/>
                 </IconButton>
            </Toolbar>

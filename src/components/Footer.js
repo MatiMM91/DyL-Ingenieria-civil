@@ -40,6 +40,9 @@ const Footer = () => {
 const useStyles = makeStyles((theme) => ({
     section: {
         minHeight: "10vh",
+        backgroundColor: "#2C2C2C",
+        color: "#fff",
+        borderTop: "1px solid #eee",
     },
     sectiondark: {
         color: "#fff",
@@ -49,8 +52,7 @@ const useStyles = makeStyles((theme) => ({
         margin: "0 auto",
     },
     media: {
-        color: "#00bb2d",
-        backgroundColor: "#7094a8",
+        backgroundColor: "#0b2d",
     },
     contacts: {
         position: "absolute",
@@ -59,6 +61,7 @@ const useStyles = makeStyles((theme) => ({
     copyright: {
         textAlign: "center",
         paddingTop: "80px",
+        fontSize: "0.85rem",
     },
 }));
 

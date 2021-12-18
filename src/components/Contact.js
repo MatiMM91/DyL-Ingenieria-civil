@@ -24,6 +24,8 @@ const Contact = ({title,dark,id}) => {
 const useStyles = makeStyles((theme) => ({
     section: {
         minHeight: "81vh",
+        color: "#fff",
+        backgroundColor: "#333",
     },
     sectiondark: {
         backgroundColor: "#333",
@@ -31,10 +33,11 @@ const useStyles = makeStyles((theme) => ({
     },
     sectioncontent: {
         maxWidth: "80vw",
-        [theme.breakpoints.down("xs")]: {
-            maxWidth: "90vw",
-        },
+        // [theme.breakpoints.down("xs")]: {
+        //     maxWidth: "90vw",
+        // },
         margin: "0 auto",
+        // marginBottom: "50px",
     },
     title: {
         paddingTop: "40px",
@@ -47,15 +50,10 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         maxWidth: "300px",
-        height: "48vh",
-        margin: "0 auto",
+        margin: "auto",
         marginTop: theme.spacing(3),
-        marginBottom: theme.spacing(4),
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: theme.spacing(8),
+        marginBottom: theme.spacing(3),
+        padding: theme.spacing(6),
         backgroundColor: "#F9FBFD",
         fontSize: "1.2rem",
         borderRadius: "10px",

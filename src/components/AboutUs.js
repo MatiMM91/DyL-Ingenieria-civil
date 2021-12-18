@@ -4,7 +4,7 @@ import {
   Grid
 }                       from '@material-ui/core';
 import React            from 'react'
-import TypeWriterEffect from 'react-typewriter-effect';
+// import TypeWriterEffect from 'react-typewriter-effect';
 import MissionModal     from './MissionModal';
 import ValuesModal      from './ValuesModal';
 import VisionModal      from './VisionModal';
@@ -18,21 +18,21 @@ const AboutUs = ({title,dark,id}) => {
       ${dark && classes.sectiondark}`
     }>
       <div className={classes.sectioncontent} id={id}>
-        <Typography className={classes.title} variant="h3" padding="10">
+        <Typography 
+          className = {classes.title} 
+          variant   = "h3" 
+          padding   = "10">
           {title}
         </Typography>
-            <TypeWriterEffect
-              text="Somos DyL Ingeniería"
-              textStyle={{
-                color: "#000",
+            <Typography
+              variant="h4"
+              style={{
                 textAlign: "center",
                 marginTop: "30px",
                 marginBottom: "30px",
-              }}
-              startDelay={100}
-              cursorColor="white"
-              typeSpeed={80}
-              />
+              }}>
+                Somos DyL Ingeniería
+              </Typography>
             <Typography 
               variant='h5' 
               color='textSecondary'

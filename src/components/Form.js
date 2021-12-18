@@ -1,12 +1,10 @@
 import React                from 'react'
 import { useState }         from 'react'
 import { Typography }       from '@material-ui/core'
-// import { useForm }          from 'react-hook-form'
 import { makeStyles }       from '@material-ui/core';
 import { TextField }        from '@material-ui/core';
 import { Button }           from '@material-ui/core';
 import emailjs              from 'emailjs-com';
-// import { * }                from './FormValidate';
 
 const Form = () => {
     const classes = useStyles();
@@ -33,8 +31,8 @@ const Form = () => {
 
         if(name !== '' && email !== '' && message !== '') {
             if(expressions.name.test(name) === true || expressions.email.test(email) === true) {   
-                emailjs.sendForm('service_0rs1eyf', 'template_qv7ybab', e.target, 
-                'user_7seD8LQpYdiO6AH4SeoNX')
+                emailjs.sendForm('zohomessage', 'template_3olqvts', e.target, 
+                'user_nCu4mCyckQW40rA5ksEnu')
                 .then((result) => {
                     var success = document.getElementById('alert')
                     success.style.display = 'block';
@@ -60,8 +58,6 @@ const Form = () => {
                 setErrorName(false)
                 setCaptionName('')
             }, 3000)
-            
-            
         } 
         
         if(expressions.email.test(email) === false) {
@@ -72,7 +68,6 @@ const Form = () => {
                 setErrorEmail(false)
                 setCaptionEmail('')
             }, 3000)
-            
         } 
         
         if(name === '' || email === '' || message === '') {
@@ -109,7 +104,7 @@ const Form = () => {
         <div>
             <form onSubmit={sendEmail} className={classes.form} id="form_submit" noValidate autoComplete="off">
                 <div className={classes.titleform}>
-                    <Typography variant="h5">Contactanos</Typography>
+                    <Typography variant="h4">Contactanos</Typography>
                 </div>
                 <TextField
                     type="text"
@@ -171,7 +166,7 @@ const Form = () => {
                         if (email === '') {
                             setErrorEmail(true)
                             setCaptionEmail('Campo Requerido')
-                            setTimeout(() => {
+                            setTimeout(() => { 
                                 setErrorEmail(false)
                                 setCaptionEmail('')
                             }, 3000)

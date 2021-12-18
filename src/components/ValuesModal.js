@@ -19,29 +19,29 @@ const ValuesModal = () => {
                 <b>Valores</b>
             </Typography>
             <List>
-                <Typography
-                    variant="h6" 
-                    component="p"
-                    color='textSecondary'
-                >
-                <b>TECNOGÍA E INNOVACIÓN:</b> Llevar la innovación a través de la tecnología a todos sus proyectos para hacerlos más sostenibles.
-                </Typography>
+                <li>
+                    <Typography
+                        color='textSecondary'
+                    >
+                        <b>TECNOGÍA E INNOVACIÓN:</b> Llevar la innovación a través de la tecnología a todos sus proyectos para hacerlos más sostenibles.
+                    </Typography>
+                </li>
                 <br/>
-                <Typography 
-                    variant="h6" 
-                    component="p"
-                    color='textSecondary'
-                >
-                <b>EFICIENCIA:</b> Los trabajos siempre se llevan a cabo teniendo como referencia la consecución de la mayor eficiencia Integral.
-                </Typography>
+                <li>
+                    <Typography
+                        color='textSecondary'
+                    >
+                        <b>EFICIENCIA:</b> Los trabajos siempre se llevan a cabo teniendo como referencia la consecución de la mayor eficiencia Integral.
+                    </Typography>
+                </li>
                 <br/>
-                <Typography
-                    variant="h6" 
-                    component="p"
-                    color='textSecondary'  
-                >
-                <b>CALIDAD TOTAL:</b> Mantener una excelencia en la calidad del trabajo teniendo en cuenta su impacto en el medio ambiente. 
-                </Typography>
+                <li>
+                    <Typography
+                        color='textSecondary'  
+                    >
+                        <b>CALIDAD TOTAL:</b> Mantener una excelencia en la calidad del trabajo teniendo en cuenta su impacto en el medio ambiente. 
+                    </Typography>
+                </li>
             </List>
         </Card>
     )
@@ -55,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: "50px",
         overflow: "hidden",
         boxShadow: "0 0 10px -5px",
+        borderRadius: "18px",
         transition: "0.3s",
         animation: "ease-in-out",
         "&:hover": {
