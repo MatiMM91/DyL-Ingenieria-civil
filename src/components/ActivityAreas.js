@@ -128,7 +128,7 @@ const useStyles = makeStyles((theme) => ({
     },
     sectioncontent: {
         maxWidth: "80vw",
-        backgroundColor:"#A3A9C6 ",
+        backgroundColor:"#cad0ed",
         borderTopRightRadius: "55px",
         borderBottomRightRadius: "55px",
         boxShadow: "4px 4px rgba(100,100,100, 0.2)",

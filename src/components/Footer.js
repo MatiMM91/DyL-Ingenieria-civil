@@ -30,7 +30,7 @@ const Footer = () => {
                     ))
                 }
                 <Typography className={classes.copyright}>
-                    © 2021 de DyL Ingeniería. Creado por Matías Manríquez
+                    © 2021 de DyL Ingeniería. Desarrollado por Matías Manríquez
                 </Typography>
             </div>
         </div>
