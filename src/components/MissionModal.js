@@ -21,7 +21,7 @@ const MissionModal = () => {
                 component="p"
                 color='textSecondary'    
             >
-                Ofrecer servicios de calidad a la vanguardia en protección del entorno y sostenibilidad. La empresa ha establecido una política de calidad y medio ambiente orientada a conseguir la confianza del cliente, ofreciendole la máxima calidad y respetando el entorno.
+                Ofrecer servicios de calidad a la vanguardia en protección del entorno y sostenibilidad. La empresa ha establecido una política de calidad y medio ambiente orientada a conseguir la confianza del cliente, ofreciéndole la máxima calidad y respetando el entorno.
             </Typography>
         </Card>
     )
