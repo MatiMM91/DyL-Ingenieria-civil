@@ -104,7 +104,7 @@ const Form = () => {
         <div>
             <form onSubmit={sendEmail} className={classes.form} id="form_submit" noValidate autoComplete="off">
                 <div className={classes.titleform}>
-                    <Typography variant="h4">Contactanos</Typography>
+                    <Typography variant="h5">Contactanos</Typography>
                 </div>
                 <TextField
                     type="text"
@@ -277,7 +277,7 @@ const Form = () => {
 
 const useStyles = makeStyles((theme) => ({
     textField: {
-        marginTop: theme.spacing(2),
+        marginTop: theme.spacing(1),
         fontSize: "1.2rem",
         width: "100%",
     },
@@ -287,7 +287,6 @@ const useStyles = makeStyles((theme) => ({
     },
     message: {
         marginTop: theme.spacing(7),
-        height: "60px",
     },
     btn: {
         display: "flex",

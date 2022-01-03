@@ -23,7 +23,7 @@ const Contact = ({title,dark,id}) => {
 
 const useStyles = makeStyles((theme) => ({
     section: {
-        minHeight: "81vh",
+        minHeight: "92vh",
         color: "#fff",
         backgroundColor: "#333",
     },
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         // marginBottom: "50px",
     },
     title: {
-        paddingTop: "40px",
+        paddingTop: "30px",
         display: "flex",
         justifyContent: "center",
         borderBottom: "4px solid #ffcc00",
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
         margin: "auto",
         marginTop: theme.spacing(3),
         marginBottom: theme.spacing(3),
-        padding: theme.spacing(6),
+        padding: theme.spacing(3),
         backgroundColor: "#F9FBFD",
         fontSize: "1.2rem",
         borderRadius: "10px",
