@@ -23,9 +23,12 @@ const Contact = ({title,dark,id}) => {
 
 const useStyles = makeStyles((theme) => ({
     section: {
-        minHeight: "92vh",
+        minHeight: "70vh",
         color: "#fff",
         backgroundColor: "#333",
+        [theme.breakpoints.down("sm")]: {
+            minHeight: "92vh",
+          },
     },
     sectiondark: {
         backgroundColor: "#333",
@@ -52,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: "300px",
         margin: "auto",
         marginTop: theme.spacing(3),
-        marginBottom: theme.spacing(3),
+        marginBottom: theme.spacing(2),
         padding: theme.spacing(3),
         backgroundColor: "#F9FBFD",
         fontSize: "1.2rem",

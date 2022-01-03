@@ -277,16 +277,16 @@ const Form = () => {
 
 const useStyles = makeStyles((theme) => ({
     textField: {
-        marginTop: theme.spacing(1),
+        marginTop: theme.spacing(3),
         fontSize: "1.2rem",
         width: "100%",
+        [theme.breakpoints.down("md")]: {
+            marginTop: theme.spacing(2),
+          },
     },
     titleform: {
         display: "flex",
         justifyContent: "center",
-    },
-    message: {
-        marginTop: theme.spacing(7),
     },
     btn: {
         display: "flex",
